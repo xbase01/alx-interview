@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+'''Coding challenge.
+'''
+
+
 def minOperations(n):
     if n == 1:
         return 0  # No operations needed for one 'H'
