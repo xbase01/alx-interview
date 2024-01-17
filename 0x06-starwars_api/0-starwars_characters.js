@@ -3,13 +3,14 @@
  * Prints all characters of a Star Wars movie
  * The first positional argument passed is the Movie ID
  * Display one character name per line in the same order
- * as  list in the /films/ endpoint
+ * as a list in the /films/ endpoint
  */
 
 const request = require('request');
 const filmNum = process.argv[2] + '/';
 const filmURL = 'https://swapi-api.hbtn.io/api/films/';
-// Makes API request, sets async to allow await promise
+
+// Makes API request
 request(filmURL + filmNum, async (err, res, body) => {
   if (err) return console.error(err);
 
